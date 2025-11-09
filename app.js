@@ -7,6 +7,13 @@ let bg = document.querySelector('.backDrop')
 let closeBtns = document.querySelectorAll('.close-btn')
 let orderBtns = document.querySelectorAll('.orderBtn')
 
+document.querySelector('.menu_icon').onclick = () => {
+    document.querySelector('.mob-menu').classList.toggle('active')
+}
+document.querySelector('.close').onclick = () => {
+    document.querySelector('.mob-menu').classList.remove('active')
+}
+
 openForm.forEach(openFormBtn => {
     openFormBtn.onclick = () => {
         formPopover.classList.toggle('active')
@@ -20,8 +27,15 @@ formCloseBtn.onclick = () => {
 }
 cards.forEach((card, index) => {
     card.onclick = () => {
-        infoPopovers[index].classList.toggle('active')
-        bg.classList.toggle('active')
+        let popoverIndex;
+        if (index > 6) {
+            const mobileMapping = [0, 1, 3, 2, 5, 4, 6];
+            popoverIndex = mobileMapping[index - 7];
+        } else {
+            popoverIndex = index;
+        }
+        infoPopovers[popoverIndex].classList.toggle('active');
+        bg.classList.toggle('active');
     }
 })
 closeBtns.forEach((closeBtn, index) => {
