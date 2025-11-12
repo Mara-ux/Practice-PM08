@@ -612,9 +612,7 @@ form{
     border-radius: 1vw;
     z-index: 100;
 }
-.form-popover.active{
-    display: inline-block;
-}
+.form-popover.active{display: inline-block;}
 .popover-wrapper{
     position: relative;
     display: flex;
@@ -628,7 +626,6 @@ form{
         width: 30vw;
     }
 }
-
 .close-btn, .form-close{
     position: absolute;
     top: 0;
@@ -639,7 +636,6 @@ form{
     background-image: url(img/close-btn.png);
     background-size: cover;
 }
-
 .form-popover .form{
     display: flex;
     flex-direction: column;
@@ -651,9 +647,7 @@ form{
     border-radius: 10vw 0;
     color: #fff;
 }
-.btn.pop-for{
-    margin-bottom: 2vw;
-}
+.btn.pop-for{margin-bottom: 2vw;}
 
 /* ----- info-popover ----- */
 
