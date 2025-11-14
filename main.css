@@ -28,20 +28,9 @@
     --red: #F0212B;
     --text-color: #1C0303;
 }
-body{
-    background-color: var(--bg-color);
-}
-section{
-    padding: 0 7.5vw;
-}
-h1, h2, h3, h4, h5{
-    font-family: Book;
-}
-
-.next{
-    height: 100vh;
-}
-
+body{background-color: var(--bg-color);}
+section{padding: 0 7.5vw;}
+h1, h2, h3, h4, h5{font-family: Book;}
 
 /* ------ nav ------ */
 
@@ -277,17 +266,6 @@ h3{
         transition: all .2s ease-in-out;
     }
 }
-/* .card:hover{
-    h3{
-        height: 60vh;
-        font-size: 2.3vw;
-    }
-} */
-/* .card:hover{
-    h3{
-        opacity: 1;
-    }
-} */
 .card:hover{
     h3{
         background-color: rgba(0, 1, 22, .8);
@@ -593,7 +571,6 @@ form{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23274F44' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
 }
 
-
 .checkbox-info{
     font-size: .9vw;
     opacity: .5;
@@ -732,23 +709,14 @@ form{
 
 
 @media (max-width:768px){
-    section{
-        padding: 0 4vw;
-    }
-    nav{
-        padding: 4vw 4vw;
-    }
+    section{padding: 0 4vw;}
+    nav{padding: 4vw 4vw;}
     .menu_icon{
         display: inline-block;
         width: 12vw;
     }
-    .logo{
-        width: 25vw;
-    }
-    .navbar, .numder{
-        display: none;
-    }
-
+    .logo{width: 25vw;}
+    .navbar, .numder{display: none;}
     .mob-menu{
         z-index: 100;
         position: fixed;
@@ -812,7 +780,6 @@ form{
     }
 
     /* ---- why ---- */
-
     h2{
         width: auto;
         font-size: 6vw;
@@ -821,7 +788,6 @@ form{
         padding-bottom: 1vh;
         border-bottom: 1vw solid var(--text-color);
     }
-
     .why{
         padding-top: 10vh;
         padding-bottom: 10vh;
@@ -862,9 +828,7 @@ form{
         width: auto;
         margin-bottom: 2vh;
     }
-    h3{
-        font-size: 5vw;
-    }
+    h3{font-size: 5vw;}
     .title-wrapper{
         display: flex;
         flex-direction: row;
@@ -883,9 +847,15 @@ form{
         h3{text-align: right;}
         .title-wrapper{flex-direction: row-reverse;}
     }
+
+    /* ---- note --- */
+
     .note h2{
         font-size: 6vw;
     }
+
+    /* ---- services --- */
+
     .services{
         padding-top: 10vh;
         padding-bottom: 15vh;
@@ -894,8 +864,6 @@ form{
         font-size: 6vw;
         padding: 1vh 5vw;
     }
-    
-    /* ---- services --- */
 
     .services .flex_wrapper{
         display: none;
@@ -1208,7 +1176,6 @@ form{
         width: 9vw;
         height: 9vw;
     }
-
     .form-popover{
         top: 0;
         left: 0;

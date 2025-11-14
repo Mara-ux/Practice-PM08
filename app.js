@@ -13,14 +13,12 @@ document.querySelector('.menu_icon').onclick = () => {
 document.querySelector('.close').onclick = () => {
     document.querySelector('.mob-menu').classList.remove('active')
 }
-
 openForm.forEach(openFormBtn => {
     openFormBtn.onclick = () => {
         formPopover.classList.toggle('active')
         bg.classList.toggle('active')
     }
 });
-
 formCloseBtn.onclick = () => {
     formPopover.classList.remove('active')
     bg.classList.remove('active')
